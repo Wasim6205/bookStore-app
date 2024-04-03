@@ -8,7 +8,7 @@ const Course = () => {
   useEffect(() => {
     const getBook = async()=>{
       try {
-        const res = await axios.get("http://book-store-app-sepia.vercel.app/book");
+        const res = await axios.get("http://localhost:4001/book");
         console.log(res.data);
         setBook(res.data)
       } catch (error) {
@@ -49,5 +49,3 @@ const Course = () => {
 };
 
 export default Course;
-
-// const res = await axios.get("http://localhost:4001/book");
